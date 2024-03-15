@@ -7,86 +7,399 @@ body{
 .row {
     margin: 10px 0 0 0;
 }
-.col-3.size{
-    margin: 5px 5px 5px 5px;
-}
-col-3.size{
-    text-align: right;
-}
-col-3.size p{
-    color: #D60000;
-}
-.col-3.size img{
-    width: 35px;
-    height: 35px;
-    top: 107px;
-    left: 100px;
-}
-.col-3{
+.col{
     display: flex;
 }
-.col-3.display{
-    display: flex;
-    flex-direction: column;
+
+.col img{
+    max-width: 151px;
+    max-height: 86px;
 }
-.col-3 img{
-    width: 151px;
-    height: 86px;
-    top: 30px;
-    left: 100px;
-} 
-.col-3 p{
+.col p{
     font-size: 20px;
     color: #ACACAC;
-    width: 197px;
-    height: 44px;
+    margin: 10px 5px 10px 10px;
+}
+
+.col.display{
+    display: flex;
+    flex-direction: column;
 }
 .project-title p{
     font-size: 13px;
     color: #2A2A2A;
+    /* margin: 0px 0px 10px 20px; */
 }
 .general{
     display: flex;
-    /* flex-direction: column; */
-    align-self: space-around;
-    justify-content: space-evenly;
+    flex-direction: row;
+    /* flex-wrap: nowrap;
+    justify-content: space-evenly; */
+}
+.project{
+    display: flex;
+    flex-direction: column;
 }
 .project img{
     width: 61px;
-    height: 61px;
-    top: 30px;
-    left: 100px;
+    max-height: 61px;
     border-radius: 30.5px;
+    margin: 0px 0px 0px 10px;
 }
 .project p{
-    width: 59px;
-    height: 18px;
+    color: #2A2A2A;
     font-size: 10px;
     text-align: center;
+    width: 59px;
+    height: 18px;
 }
-.col-8 img{
-    width: 680px;
-    height: 356px;
-    top: 346px;
-    left: 460px;
+
+.col.color{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.col.color p{
+    color: #D60000;
+}
+.social-media{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.social-media img{
+    max-width: 35px;
+    max-height: 35px;
+    top: 107px;
+    left: 100px;
+    margin: 0px 5px 0px 0px;
+}
+.social-media img:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.subsection{
+    border: 1px solid #ACACAC;
+    max-width: 320px;
+    max-height: 517px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
-.subparagraph h6{
-    width: 230px;
+.subsection img{
+    max-width: 290px;
+    max-height: 94px;
+    border-radius: 10px;
+    margin: 15px 15px 10px 15px;
+}
+.subsection a{
+    width: 290px;
     text-align: left;
     background-color: #F5F5F5;
     color: #000000;
-    padding: 3px 5px 5px 5px;
+    padding: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.subsection a{
+    text-decoration: none;
+}
+.subsection a:hover {
+	background-color: #D60000;
+    color: #F8F8F8;
+}
+
+
+
+.news-articles h1{
+    max-width: 680px;
+    font-size: 43px;
+    font-weight: bold;
+    margin: 0px 0px 25px 0px;
+}
+.news-articles img{
+    max-width: 680px;
+    max-height: 373px;
+    border-radius: 10px;
+    border: 1px;
+}
+/* .news-articles button{
+    width: 195px;
+    height: 45px;
+    border-radius: 5px;
+    color: #171717;
+    border-color: #171717;
+    margin: 90px 0px 0px 14px;
+    border: none;
+    font-size: 18px;
+} */
+.news-videos h1{
+    font-size: 43px;
+    font-weight: bold;
+    margin: 50px 0px 25px 0px;
+}
+.news-videos img{
+    max-width: 560px;
+    max-height: 373px;
+    border-radius: 10px;
+    border: 1px;
+}
+.they-talk-about-us h1{
+    max-width: 680px;
+    font-size: 43px;
+    font-weight: bold;
+    margin: 20px 0px 25px 0px;
+}
+.place-for-video-review{
+    display: flex;
+    flex-direction: row;
+}
+.video-review{
+    background-color: #DBDBDB;
+    width: 178px;
+    height: 275px;
+    border-radius: 10px;
+    margin: 0px 15px 0px 0px;
+}
+.video-review p{
+    color: #A4A4A4;
+    font-size: 18px;
+    text-align: center;
+    max-width: 144px;
+    max-height: 38px;
+    margin: 95px 0px 0px 20px;
+} 
+.video-review button{
+    max-width: 182px;
+    max-height: 35px;
+    border-radius: 5px;
+    color: #4A4A4A;
+    border-color: #F8F8F8;
+    margin: 95px 0px 0px 24px; 
+    border: none;
+} 
+.video-review button:hover {
+	background-color: #D60000;
+    color: #F8F8F8;
+}
+
+.we-are-building h1{
+    font-size: 43px;
+    font-weight: bold;
+    margin: 50px 0px 25px 0px;
+}
+.what-we-are-building-in-common{
+    display: flex;
+    flex-direction: row;
+}
+.detailed-what-we-are-building{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 0px;
+}
+.detailed-what-we-are-building img{
+    max-width: 275px;
+    max-height: 212px;
     border-radius: 10px;
 }
-.col h1{
-    justify-content: space-between;
+.detailed-what-we-are-building img{
+    max-width: 275px;
+    max-height: 212px;
+    border-radius: 10px;
 }
-/* .footer{
-    
-    background-color: #003d9d;
+.detailed-what-we-are-building button{
+    max-width: 223px;
+    max-height: 50px;
+    border-radius: 5px;
+    color: #F8F8F8;
+    border-color: #F8F8F8;
+}
+.detailed-what-we-are-building button:hover{
+    max-width: 223px;
+    max-height: 50px;
+    border-radius: 5px;
+    color: #F8F8F8;
+    border-color: #F8F8F8;
+}
+/* --------------------------------------------------- */
+/* .what-we-are-building-in-common {
+    position: relative;
+    margin-top: 50px;
+    max-width: 330px;
+    max-height: 212px;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 330px;
+    height: 212px;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .what-we-are-building-in-common:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  .what-we-are-building-in-common img {
+    position: absolute;
+    max-width: 330px;
+    max-height: 212px;
+  }
+  
+  .button {
+    position: absolute;
+    margin: 91px 0px 0px 45px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  
+  .button a {
+    width: 223px;
+    height: 50px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .what-we-are-building-in-common:hover .button {
+    opacity: 1;
+  } */
+  /* ----------------------------------------------------------- */
+.detailed-what-we-are-building p{
+    max-width: 182px;
+    max-height: 19px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2A2A2A;
+} 
+
+.col.size{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.frame-current-news{
+    border: 1px solid #ACACAC;
+    max-width: 320px;
+    max-height: 517px;
+    border-radius: 10px;
+}
+.frame-current-news p{
+    max-width: 208px;
+    max-height: 19px;
+    font-size: 18px;
+    color: #2A2A2A;
+    margin: 10px 0px 15px 15px;
+}
+.detailed-current-news{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 10px 13px;
+}
+.detailed-current-news img{
+    max-width: 104px;
+    max-height: 78px;
+    border-radius: 5px;
+}
+.detailed-description-of-current-news h1{
+    max-width: 171px;
+    max-height: 17px;
+    font-size: 16px;
+    margin: 0px 20px 0px 10px;
+}
+.detailed-description-of-current-news p{
+    max-width: 170px;
+    max-height: 14px;
+    font-size: 13px;
+    margin: 5px 21px 0px 10px;
+    color: #2A2A2A;
+}
+
+.footer{    
+    background-color: #F3F3F3;
+    margin: 10px 10px 10px 10px;
 }
 .footer h5{
     color: #fff;
-    margin: 10px 10px 10px 25px;
-} */
+}
+
+.invite-to-participate-in-the-tender button{
+    width: 368px;
+    height: 55px;
+    border-radius: 5px;
+    color: #F8F8F8;
+    background: #171717;
+    margin: 10px 0px 10px 0px;
+    border: none;
+} 
+.invite-to-participate-in-the-tender button:hover {
+	background-color: #D60000;
+    color: #F8F8F8;
+}
+
+.individual-offer button{
+    width: 368px;
+    height: 55px;
+    border-radius: 5px;
+    color: #F8F8F8;
+    background: #D60000;
+    border-color: #D60000;
+    margin: 0px 0px 55px 0px;
+} 
+.individual-offer button:hover {
+    background-color: #F8F8F8;
+    color: #D60000;
+}
+
+.col-4 p{
+    font-size: 16px;
+    color: #2A2A2A;
+    margin: 5px 0;
+}
+
+.that-we-are-building-a-basement h1{
+    color: #2A2A2A;
+    font-size: 20px;
+}
+.that-we-are-building-a-basement p{
+    color: #2A2A2A;
+    font-size: 16px;
+}
+.col-6{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    padding: 10px 10px 10px 10px;
+}
+
+.we-stand-footer h1{
+    font-size: 20px;
+    color: #2A2A2A;
+    margin: 0px 0px 15px 0px;
+}
+.we-stand-footer.margin a{
+    font-size: 16px;
+    color: #2A2A2A;
+    margin: 44px 35px -39px 15px;
+}
+.we-stand-footer a{
+    font-size: 16px;
+    color: #2A2A2A;
+    margin: 5px 5px 0px 0px;
+    text-decoration: none;
+}
+.we-stand-footer{
+    display: flex;    
+    flex-direction: column;
+} 
