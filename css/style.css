@@ -2,7 +2,12 @@ body{
     font-family: Roboto;
 }
 .container{
+    max-width: 1400px;
+}
+.header{
+    display: block;
     margin: 10px 10px 10px 10px;
+    
 }
 .row {
     margin: 10px 0 0 0;
@@ -14,6 +19,7 @@ body{
 .col img{
     max-width: 151px;
     max-height: 86px;
+    margin: 10px 0px 0px 0px;
 }
 .col p{
     font-size: 20px;
@@ -21,7 +27,23 @@ body{
     margin: 10px 5px 10px 10px;
 }
 
+.line{
+    border-bottom: 1px solid #ACACAC;
+    max-width: 1300px;
+    margin: 25px 0px 25px 340px;
+}
+
+.line.footer{
+    border-bottom: 1px solid #ACACAC;
+    max-width: 1400px;
+    margin: 25px 0px 25px 0px;
+}
+
 .col.display{
+    display: flex;
+    flex-direction: column;
+}
+.col-6.display{
     display: flex;
     flex-direction: column;
 }
@@ -80,15 +102,15 @@ body{
 
 .subsection{
     border: 1px solid #ACACAC;
-    max-width: 320px;
-    max-height: 517px;
+    width: 320px;
+    height: 517px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 .subsection img{
-    max-width: 290px;
-    max-height: 94px;
+    width: 290px;
+    height: 94px;
     border-radius: 10px;
     margin: 15px 15px 10px 15px;
 }
@@ -114,40 +136,32 @@ body{
 
 .news-articles h1{
     max-width: 680px;
-    font-size: 43px;
+    max-height: 94px;
+    font-size: 45px;
     font-weight: bold;
     margin: 0px 0px 25px 0px;
 }
 .news-articles img{
-    max-width: 680px;
-    max-height: 373px;
+    width: 680px;
+    height: 373px;
     border-radius: 10px;
     border: 1px;
 }
-/* .news-articles button{
-    width: 195px;
-    height: 45px;
-    border-radius: 5px;
-    color: #171717;
-    border-color: #171717;
-    margin: 90px 0px 0px 14px;
-    border: none;
-    font-size: 18px;
-} */
-.news-videos h1{
-    font-size: 43px;
+.news-videos h2{
+    font-size: 45px;
     font-weight: bold;
     margin: 50px 0px 25px 0px;
 }
 .news-videos img{
-    max-width: 560px;
-    max-height: 373px;
+    max-width: 680px;
+    max-height: 356px;
     border-radius: 10px;
     border: 1px;
 }
-.they-talk-about-us h1{
+.they-talk-about-us h3{
     max-width: 680px;
-    font-size: 43px;
+    max-height: 47px;
+    font-size: 45px;
     font-weight: bold;
     margin: 20px 0px 25px 0px;
 }
@@ -157,10 +171,10 @@ body{
 }
 .video-review{
     background-color: #DBDBDB;
-    width: 178px;
-    height: 275px;
+    width: 212px;
+    height: 289px;
     border-radius: 10px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 .video-review p{
     color: #A4A4A4;
@@ -168,15 +182,15 @@ body{
     text-align: center;
     max-width: 144px;
     max-height: 38px;
-    margin: 95px 0px 0px 20px;
+    margin: 105px 0px 0px 35px;
 } 
 .video-review button{
-    max-width: 182px;
-    max-height: 35px;
+    width: 182px;
+    height: 35px;
     border-radius: 5px;
     color: #4A4A4A;
     border-color: #F8F8F8;
-    margin: 95px 0px 0px 24px; 
+    margin: 90px 0px 0px 15px; 
     border: none;
 } 
 .video-review button:hover {
@@ -184,8 +198,10 @@ body{
     color: #F8F8F8;
 }
 
-.we-are-building h1{
-    font-size: 43px;
+.we-are-building h4{
+    max-width: 680px;
+    max-height: 47px;
+    font-size: 45px;
     font-weight: bold;
     margin: 50px 0px 25px 0px;
 }
@@ -196,15 +212,10 @@ body{
 .detailed-what-we-are-building{
     display: flex;
     flex-direction: column;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 15px 0px 0px;
 }
 .detailed-what-we-are-building img{
-    max-width: 275px;
-    max-height: 212px;
-    border-radius: 10px;
-}
-.detailed-what-we-are-building img{
-    max-width: 275px;
+    max-width: 330px;
     max-height: 212px;
     border-radius: 10px;
 }
@@ -223,64 +234,62 @@ body{
     border-color: #F8F8F8;
 }
 /* --------------------------------------------------- */
-/* .what-we-are-building-in-common {
-    position: relative;
-    margin-top: 50px;
+/* .detailed-what-we-are-building{
     max-width: 330px;
     max-height: 212px;
+    border-radius: 10px;
+    /* margin: 0px 10px 10px 0px; 
+} */
+
+.detailed-what-we-are-building {
+    position: relative;
+    width: 330px;
   }
-  
   .overlay {
     position: absolute;
+    /* top: 0;
+    left: 0; */
     width: 330px;
     height: 212px;
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0.5); Настройка цвета и прозрачности для блока с заголовком */
     transition: background 0.5s ease;
     border-radius: 10px;
   }
-  
-  .what-we-are-building-in-common:hover .overlay {
+  .detailed-what-we-are-building:hover .overlay {
     display: block;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.5);
   }
-  
-  .what-we-are-building-in-common img {
-    position: absolute;
-    max-width: 330px;
-    max-height: 212px;
-  }
-  
+
   .button {
     position: absolute;
-    margin: 91px 0px 0px 45px;
+    width: 223px;
+    height: 50px;
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
+    margin: 95px 0px 0px 50px;
   }
-  
   .button a {
-    width: 223px;
-    height: 50px;
-    padding: 12px 48px;
+    padding: 15px 40px;
     text-align: center;
     color: white;
-    border: solid 2px white;
-    z-index: 1;
-    border-radius: 10px;
+    border: 1px solid white;
+    z-index: 1; 
+    border-radius: 5px;
     font-size: 16px;
     text-decoration: none;
   }
-  
-  .what-we-are-building-in-common:hover .button {
+  .detailed-what-we-are-building:hover .button {
     opacity: 1;
-  } */
+  }
   /* ----------------------------------------------------------- */
-.detailed-what-we-are-building p{
+.detailed-what-we-are-building h5{
     max-width: 182px;
     max-height: 19px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold; 
     color: #2A2A2A;
+    margin: 10px 0px 35px 0px;
 } 
 
 .col.size{
@@ -310,7 +319,7 @@ body{
     max-height: 78px;
     border-radius: 5px;
 }
-.detailed-description-of-current-news h1{
+.detailed-description-of-current-news h6{
     max-width: 171px;
     max-height: 17px;
     font-size: 16px;
@@ -320,13 +329,14 @@ body{
     max-width: 170px;
     max-height: 14px;
     font-size: 13px;
-    margin: 5px 21px 0px 10px;
+    margin: 5px 0px 0px 10px;
     color: #2A2A2A;
 }
 
 .footer{    
     background-color: #F3F3F3;
     margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 .footer h5{
     color: #fff;
@@ -379,10 +389,6 @@ body{
     flex-direction: row;
 }
 
-.footer{
-    padding: 10px 10px 10px 10px;
-}
-
 .we-stand-footer h1{
     font-size: 20px;
     color: #2A2A2A;
@@ -403,3 +409,8 @@ body{
     display: flex;    
     flex-direction: column;
 } 
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+}
