@@ -29,14 +29,8 @@ body{
 
 .line{
     border-bottom: 1px solid #ACACAC;
-    max-width: 1300px;
-    margin: 25px 0px 25px 340px;
-}
-
-.line.footer{
-    border-bottom: 1px solid #ACACAC;
     max-width: 1400px;
-    margin: 25px 0px 25px 0px;
+    margin: 32px 0px 30px 0px;
 }
 
 .col.display{
@@ -46,6 +40,7 @@ body{
 .col-6.display{
     display: flex;
     flex-direction: column;
+    padding: 0px 4px 0px 4px;
 }
 .project-title p{
     font-size: 13px;
@@ -102,28 +97,53 @@ body{
 
 .subsection{
     border: 1px solid #ACACAC;
-    width: 320px;
-    height: 517px;
+    width: auto;
+    height: auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 17px 0px;
 }
+
 .subsection img{
     width: 290px;
     height: 94px;
     border-radius: 10px;
-    margin: 15px 15px 10px 15px;
+    margin: 15px 15px 5px 15px;
 }
+.title-in-the-picture-of-the-left-menu {
+    width: 109px;
+    height: 19px;
+    position: absolute;
+    top: 240px;
+    left: 145px;
+    font-size: 18px;
+    color: #D7D7D7;
+}
+.brand-left-menu {
+    width: 155px;
+    height: 26px;
+    position: absolute;
+    top: 276px;
+    left: 145px;
+    font-size: 25px;
+    color: #F8F8F8;
+}
+
 .subsection a{
     width: 290px;
     text-align: left;
     background-color: #F5F5F5;
     color: #000000;
     padding: 5px 0px 5px 10px;
-    margin: 5px 0px 5px 15px;
+    margin: 10px 0px 0px 15px;
     border-radius: 10px;
     font-size: 18px;
 }
+.subsection a:last-child{
+    margin: 10px 0px 17px 15px;
+}
+
 .subsection a{
     text-decoration: none;
 }
@@ -132,8 +152,6 @@ body{
     color: #F8F8F8;
 }
 
-
-
 .news-articles h1{
     max-width: 680px;
     max-height: 94px;
@@ -141,23 +159,53 @@ body{
     font-weight: bold;
     margin: 0px 0px 25px 0px;
 }
-.news-articles img{
+.news-articles img {
     width: 680px;
     height: 373px;
     border-radius: 10px;
-    border: 1px;
-}
+  }
+  
+  .news-articles .news-articles-btn {
+    width: 195px;
+    height: 45px;
+    top: 637px;
+    left: 480px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    position: absolute;
+    color: #2A2A2A;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
 .news-videos h2{
     font-size: 45px;
     font-weight: bold;
     margin: 50px 0px 25px 0px;
 }
 .news-videos img{
-    max-width: 680px;
-    max-height: 356px;
+    width: 680px;
+    height: 356px;
     border-radius: 10px;
     border: 1px;
 }
+
+svg {
+    width: 110.99px; 
+    height: 110.99px;
+    fill: currentColor;
+    transform-origin: center;
+    margin: -358px 10px 10px 290px;
+    color: #F8F8F8;
+  }
+
+.news-videos .triangle {
+	border-top: 25px solid transparent;
+	border-left: 50px solid #F8F8F8;
+	border-bottom: 25px solid transparent;
+    left: 300px;
+} 
 .they-talk-about-us h3{
     max-width: 680px;
     max-height: 47px;
@@ -298,39 +346,68 @@ body{
 }
 .frame-current-news{
     border: 1px solid #ACACAC;
-    max-width: 320px;
-    max-height: 517px;
+    width: auto;
+    height: auto;
     border-radius: 10px;
 }
 .frame-current-news p{
-    max-width: 208px;
-    max-height: 19px;
+    width: 208px;
+    height: 19px;
     font-size: 18px;
     color: #2A2A2A;
-    margin: 10px 0px 15px 15px;
+    margin: 15px 97px 20px 15px;
 }
+.frame-current-news button{
+    width: 290px;
+    height: 45px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: #2A2A2A;
+    font-size: 18px;
+    margin: 19px 15px 17px 15px;
+}
+
 .detailed-current-news{
     display: flex;
     flex-direction: row;
-    margin: 0px 0px 10px 13px;
+    margin: 0px 0px 20px 0px;
 }
 .detailed-current-news img{
-    max-width: 104px;
-    max-height: 78px;
+    width: 104px;
+    height: 78px;
     border-radius: 5px;
+    margin: 0px 10px 0px 15px;
 }
+
 .detailed-description-of-current-news h6{
-    max-width: 171px;
-    max-height: 17px;
+    width: 171px;
+    height: 17px;
+    font-weight: bold;
     font-size: 16px;
-    margin: 0px 20px 0px 10px;
+    margin: 0px 27px 40px 0px;
 }
 .detailed-description-of-current-news p{
-    max-width: 170px;
-    max-height: 14px;
+    width: 170px;
+    height: 14px;
     font-size: 13px;
-    margin: 5px 0px 0px 10px;
+    margin: 7px 0px 0px 0px;
     color: #2A2A2A;
+}
+.detailed-description-of-current-news p:nth-child(2){
+    width: 170px;
+    height: 14px;
+    font-size: 13px;
+    margin: 10px 0px 0px 0px;
+    color: #8E8E8E;
+}
+.detailed-description-of-current-news p:last-child{
+    width: 170px;
+    height: 14px;
+    font-size: 13px;
+    margin: 5px 0px 0px 0px;
+    color: #8E8E8E;
 }
 
 .footer{    
@@ -348,7 +425,7 @@ body{
     border-radius: 5px;
     color: #F8F8F8;
     background: #171717;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     border: none;
 } 
 .invite-to-participate-in-the-tender button:hover {
