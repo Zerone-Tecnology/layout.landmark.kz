@@ -129,25 +129,31 @@ body{
     font-size: 25px;
     color: #F8F8F8;
 }
-
-.subsection a{
+.side-menus li a{
     width: 290px;
-    text-align: left;
     background-color: #F5F5F5;
-    color: #000000;
-    padding: 5px 0px 5px 10px;
-    margin: 10px 0px 0px 15px;
+    /* padding: 10px 15px; */
     border-radius: 10px;
-    font-size: 18px;
-}
-.subsection a:last-child{
-    margin: 10px 0px 17px 15px;
-}
-
-.subsection a{
+    color: #000000;
     text-decoration: none;
+    list-style: none;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 15px;
 }
-.subsection a:hover {
+.side-menus li{
+    list-style: none;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 15px;
+}  
+/* .side-menus a{
+    color: #000000;
+    text-decoration: none;
+}  */
+/* .side-menus a:last-child{
+    margin: 10px 0px 17px 15px;
+} */
+
+.side-menus li a:hover{
 	background-color: #D60000;
     color: #F8F8F8;
 }
@@ -190,22 +196,6 @@ body{
     border-radius: 10px;
     border: 1px;
 }
-
-svg {
-    width: 110.99px; 
-    height: 110.99px;
-    fill: currentColor;
-    transform-origin: center;
-    margin: -358px 10px 10px 290px;
-    color: #F8F8F8;
-  }
-
-.news-videos .triangle {
-	border-top: 25px solid transparent;
-	border-left: 50px solid #F8F8F8;
-	border-bottom: 25px solid transparent;
-    left: 300px;
-} 
 .they-talk-about-us h3{
     max-width: 680px;
     max-height: 47px;
@@ -401,14 +391,89 @@ svg {
     font-size: 13px;
     margin: 10px 0px 0px 0px;
     color: #8E8E8E;
-}
+} 
 .detailed-description-of-current-news p:last-child{
     width: 170px;
     height: 14px;
     font-size: 13px;
     margin: 5px 0px 0px 0px;
     color: #8E8E8E;
+} 
+
+.url{
+    display: flex;
+    flex-direction: row;
 }
+.url a{
+    /* width: 71px; */
+    height: 19px;
+    font-size: 18px;
+    color: #BFBFBF;
+    text-align: center;
+    margin: 0px 0px 71px 0px;
+    text-decoration: none;
+}
+.url p{
+    width: 71px;
+    height: 19px;
+    font-size: 18px;
+    color: #BFBFBF;
+    text-align: center;
+    margin: 0px 0px 71px 0px;
+}
+.main-heading h1{
+    font-size: 45px;
+    color: #2A2A2A;
+    font-weight: bold;
+}
+.main-heading p{
+    font-size: 18px;
+    color: #B3B3B3;
+    margin: 10px 0px 40px 0px;
+}  
+.col-7 p{
+    color: #535353;
+    font-size: 18px;
+}
+
+.col-5 img{
+    width: 598px;
+    height: 414px;
+    border-radius: 150px 50px 150px 50px;
+}
+.col-12{
+    margin: 71px 0px 130px 0px;
+    color: #535353;
+    font-size: 18px;
+}
+
+.row h3{
+    font-size: 45px;
+    color: #2A2A2A;
+    font-weight: bold;
+    margin-top: 130px;
+}
+.detailed-other-news{
+    display: flex;
+    flex-direction: column;
+}
+.detailed-other-news img{
+    width: 446px;
+    height: 309px;
+    border-radius: 90px 30px 90px 30px;
+    margin-top: 60px;
+}
+.detailed-other-news h4{
+    font-size: 30px;
+    color: #2A2A2A;
+    margin: 25px 0px 7px 0px;
+}
+.detailed-other-news p{
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+
 
 .footer{    
     background-color: #F3F3F3;
@@ -432,6 +497,96 @@ svg {
 	background-color: #D60000;
     color: #F8F8F8;
 }
+/* ------------- */
+ 
+.popup-tender{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2; 
+    display: none;
+}
+  #popup-tender.active{
+  display: block;
+  }
+  
+  .popup-tender-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup-tender-body{
+    margin: auto;
+    width: 689px;
+    height: 716px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-tender-body h6{
+    width: 541px;
+    height: 122px;
+    font-size: 55px;
+    font-weight: 600;
+    color: #2A2A2A;
+    margin: 30px 0px 20px 74px;
+  }
+  .popup-tender-body p{
+    width: 474px;
+    font-size: 20px;
+    color: #707070;
+    margin-left: 107px;
+  }
+  .popup-tender-body p:nth-last-child(2){
+    width: 521px;
+    font-size: 16px;
+    margin: 30px 0px 49px 84px;
+  }
+  .popup-tender-body input{
+    display: block;
+    margin-left: 94px;
+    border: none;
+    font-size: 18px;
+    color: #2A2A2A;
+  } 
+  
+  .popup-tender-line{
+    border-bottom: 1px solid #2A2A2A;
+    width: 500px;
+    margin: 17px 0px 35px 84px;
+  }
+  
+  .popup-tender-body input:focus{
+    outline: none;
+  }
+  
+  .popup-tender-body button{
+    width: 500px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #D60000;
+  }
+  
+  .close-popup-tender{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+  }
+
+/* ----------------------------------- */
+
 
 .individual-offer button{
     width: 368px;
@@ -446,6 +601,93 @@ svg {
     background-color: #F8F8F8;
     color: #D60000;
 }
+
+.popup-offer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2; 
+    display: none;
+}
+  #popup-offer.active{
+  display: block;
+  }
+  
+  .popup-offer-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup-offer-body{
+    margin: auto;
+    width: 689px;
+    height: 716px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-offer-body h6{
+    width: 541px;
+    height: 122px;
+    font-size: 55px;
+    font-weight: 600;
+    color: #2A2A2A;
+    margin: 30px 0px 20px 74px;
+  }
+  .popup-offer-body p{
+    width: 474px;
+    font-size: 20px;
+    color: #707070;
+    margin-left: 107px;
+  }
+  .popup-offer-body p:nth-last-child(2){
+    width: 521px;
+    font-size: 16px;
+    margin: 30px 0px 49px 84px;
+  }
+  .popup-offer-body input{
+    display: block;
+    margin-left: 94px;
+    border: none;
+    font-size: 18px;
+    color: #2A2A2A;
+  } 
+  
+  .popup-offer-line{
+    border-bottom: 1px solid #2A2A2A;
+    width: 500px;
+    margin: 17px 0px 35px 84px;
+  }
+  
+  .popup-offer-body input:focus{
+    outline: none;
+  }
+  
+  .popup-offer-body button{
+    width: 500px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #D60000;
+  }
+  
+  .close-popup-offer{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+  }
+  /* ------------------------- */
 
 .col-4 p{
     font-size: 16px;
